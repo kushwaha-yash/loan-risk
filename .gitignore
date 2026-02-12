@@ -1,0 +1,5 @@
+ar5/application_train.csv
+*.csv
+*.db
+*.pkl
+__pycache__/
