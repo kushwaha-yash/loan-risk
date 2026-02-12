@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "question": "What is the applicant’s employment type?",
+    "key": "employment_status_encoded",
+    "type": "select",
+    "options": [
+      { "label": "Permanent Salaried", "value": 2 },
+      { "label": "Self Employed", "value": 1 },
+      { "label": "Unemployed / Contract", "value": 0 }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Enter monthly income (₹)",
+    "key": "monthly_income",
+    "type": "number",
+    "placeholder": "e.g. 4500"
+  },
+  {
+    "id": 3,
+    "question": "Enter credit score (300 – 900)",
+    "key": "credit_score",
+    "type": "number",
+    "placeholder": "e.g. 750"
+  },
+  {
+    "id": 4,
+    "question": "Debt-to-income ratio (0 – 1)",
+    "key": "debt_to_income_ratio",
+    "type": "number",
+    "placeholder": "e.g. 0.32"
+  },
+  {
+    "id": 5,
+    "question": "Enter requested loan amount (₹)",
+    "key": "loan_amount",
+    "type": "number",
+    "placeholder": "e.g. 25000"
+  },
+  {
+    "id": 6,
+    "question": "Loan tenure (in months)",
+    "key": "loan_term",
+    "type": "select",
+    "options": [
+      { "label": "12 months", "value": 12 },
+      { "label": "24 months", "value": 24 },
+      { "label": "36 months", "value": 36 },
+      { "label": "60 months", "value": 60 }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Number of past payment delays",
+    "key": "delinquency_history",
+    "type": "select",
+    "options": [
+      { "label": "None", "value": 0 },
+      { "label": "1–2 times", "value": 1 },
+      { "label": "More than 2 times", "value": 2 }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Any public or legal financial records?",
+    "key": "public_records",
+    "type": "select",
+    "options": [
+      { "label": "No", "value": 0 },
+      { "label": "Yes", "value": 1 }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Total credit limit available (₹)",
+    "key": "total_credit_limit",
+    "type": "number",
+    "placeholder": "e.g. 60000"
+  },
+  {
+    "id": 10,
+    "question": "Interest rate on loan (%)",
+    "key": "interest_rate",
+    "type": "number",
+    "placeholder": "e.g. 11.5"
+  }
+]

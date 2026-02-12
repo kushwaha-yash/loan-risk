@@ -1,0 +1,92 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Auth | LoanGyaan AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+
+    <!-- SIGN UP -->
+    <div class="form-container sign-up">
+        <form method="POST" action="/auth">
+            <h1>Create Account</h1>
+            <span>For Banks & Lenders</span>
+
+            <!-- IMPORTANT -->
+            <input type="hidden" name="action" value="signup">
+
+            <div class="input-box">
+                <i class="fa fa-user"></i>
+                <input type="text" name="name" required placeholder="Full Name">
+            </div>
+
+            <div class="input-box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" required placeholder="Password">
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="form-container sign-in">
+        <form method="POST" action="/auth">
+            <h1>Login</h1>
+            <span>Secure access to dashboard</span>
+
+            <!-- IMPORTANT -->
+            <input type="hidden" name="action" value="login">
+
+            <div class="input-box">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" required placeholder="Password">
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>Login to access loan risk insights</p>
+                <button class="ghost" id="signIn">Login</button>
+            </div>
+
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Lender!</h1>
+                <p>Start predicting loan default risk</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const container = document.getElementById("container");
+    document.getElementById("signUp").onclick = () =>
+        container.classList.add("right-panel-active");
+    document.getElementById("signIn").onclick = () =>
+        container.classList.remove("right-panel-active");
+</script>
+
+</body>
+</html>

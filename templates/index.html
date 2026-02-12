@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoanGyaan AI | Loan Risk Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- ===============================
+     Navbar
+================================ -->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <div class="logo">
+            <span>LoanGyaan AI</span>
+        </div>
+
+        <!-- ✅ USER TYPE SELECTOR (REPLACED NAV LINKS) -->
+        <div class="nav-user">
+            <span>For:</span>
+            <select id="userType">
+                <option value="lender">Lender</option>
+                <option value="bank">Bank</option>
+                <option value="nbfc">NBFC</option>
+            </select>
+        </div>
+
+        <!-- Action Button -->
+        <div class="nav-actions">
+            <a href="/auth" class="nav-btn">Login / Sign Up</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- ===============================
+     Hero Section
+================================ -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>AI-Powered Loan Risk Intelligence</h1>
+        <p>
+            Predict loan default risk before approval.  
+            Built for banks, NBFCs & modern lenders.
+        </p>
+
+        <div class="hero-actions">
+            <a href="/assessment" class="btn">Check Loan Risk</a>
+            <a href="#how" class="btn-outline">How It Works</a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <h3>95%</h3>
+                <span>Prediction Accuracy</span>
+            </div>
+            <div>
+                <h3>10K+</h3>
+                <span>Loans Evaluated</span>
+            </div>
+            <div>
+                <h3>Instant</h3>
+                <span>Risk Score</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ===============================
+     Financing Solutions
+================================ -->
+<section class="solutions">
+    <h2>Financing Solutions</h2>
+
+    <div class="cards">
+        <div class="card">Debt Paydown</div>
+        <div class="card">Cash Loan</div>
+        <div class="card">Large Expense</div>
+        <div class="card">Refinance</div>
+    </div>
+</section>
+
+<!-- ===============================
+     Trust Section
+================================ -->
+<section class="trust">
+    <h2>Why Lenders Trust LoanGyaan AI</h2>
+
+    <div class="trust-cards">
+        <div class="trust-card">
+            <h3>Data-Driven Decisions</h3>
+            <p>ML models trained on borrower behavior & credit patterns.</p>
+        </div>
+
+        <div class="trust-card">
+            <h3>Early Risk Detection</h3>
+            <p>Identify high-risk borrowers before loan disbursement.</p>
+        </div>
+
+        <div class="trust-card">
+            <h3>Explainable AI</h3>
+            <p>Clear reasons behind every risk score — no black box.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ===============================
+     How It Works
+================================ -->
+<section class="how" id="how">
+    <h2>How It Works</h2>
+    <ol>
+        <li>Select loan purpose</li>
+        <li>Answer a few smart questions</li>
+        <li>Get instant risk assessment</li>
+    </ol>
+</section>
+
+<!-- ===============================
+     Footer
+================================ -->
+<footer>
+    <p>Demo Project – AI-Based Loan Default Risk Prediction System</p>
+</footer>
+
+</body>
+</html>

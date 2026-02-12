@@ -1,0 +1,573 @@
+/* ===============================
+   Global Reset
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===============================
+   Navbar
+================================ */
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e88e5;
+}
+
+/* ===============================
+   User Type Selector (NAV USER)
+================================ */
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.nav-user span {
+    font-weight: 500;
+    color: #555;
+}
+
+.nav-user select {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    background: #fff;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-user select:hover {
+    border-color: #1e88e5;
+}
+
+.nav-user select:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 0 2px rgba(30,136,229,0.15);
+}
+
+/* ===============================
+   Navbar Actions
+================================ */
+.nav-actions {
+    display: flex;
+}
+
+.nav-btn {
+    padding: 10px 22px;
+    background: #1e88e5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #1565c0;
+}
+
+/* ===============================
+   Common Buttons
+================================ */
+.btn {
+    padding: 12px 26px;
+    background: #1e88e5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #1565c0;
+}
+
+.btn-outline {
+    padding: 12px 26px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #0d47a1;
+}
+
+/* ===============================
+   Hero Section
+================================ */
+.hero {
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.hero-actions {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero-stats {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hero-stats h3 {
+    font-size: 26px;
+}
+
+.hero-stats span {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ===============================
+   Financing Solutions
+================================ */
+.solutions {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.solutions h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   Trust Section
+================================ */
+.trust {
+    background: #f9fbff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.trust h2 {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.trust-cards {
+    display: flex;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.trust-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.trust-card:hover {
+    transform: translateY(-6px);
+}
+
+.trust-card h3 {
+    color: #1e88e5;
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   How It Works
+================================ */
+.how {
+    background: #fff;
+    padding: 60px 20px;
+}
+
+.how h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how ol {
+    max-width: 600px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* ===============================
+   Footer
+================================ */
+footer {
+    background: #e3f2fd;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* ===============================
+   Mobile Responsive
+================================ */
+@media (max-width: 768px) {
+    .nav-user {
+        display: none; /* mobile pe hide for clean look */
+    }
+
+    .cards,
+    .trust-cards,
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+/* ===============================
+   Dashboard Styles
+================================ */
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.dashboard-header {
+    margin-bottom: 40px;
+}
+
+.dashboard-header h2 {
+    font-size: 30px;
+    color: #1e88e5;
+}
+
+.dashboard-header p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Cards layout */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.dashboard-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.dashboard-card p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Primary card */
+.dashboard-card.primary {
+    border-left: 6px solid #1e88e5;
+}
+
+/* Secondary card */
+.dashboard-card.secondary {
+    border-left: 6px solid #43a047;
+}
+
+.dashboard-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-card ul li {
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Footer */
+.dashboard-footer {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.logout-btn {
+    color: #e53935;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}
+/* ===============================
+   Dashboard Navbar
+================================ */
+.dashboard-navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.dashboard-navbar .brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e88e5;
+}
+
+.dashboard-navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome-text {
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+}
+
+.logout-btn {
+    color: #e53935;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}
+/* ===============================
+   Assessment Page
+================================ */
+
+.assessment-box {
+    background: #ffffff;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.assessment-box h2 {
+    margin-bottom: 20px;
+    color: #1e88e5;
+}
+
+.assessment-box p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.options button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: #e3f2fd;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.options button:hover {
+    background: #bbdefb;
+    transform: translateY(-2px);
+}
+
+
+
+
+/* ===============================
+   result Page
+================================ */
+/* ===============================
+   Result Page
+================================ */
+
+/* ===============================
+   Result Page (FINAL FIXED)
+================================ */
+/* ===============================
+   RESULT PAGE – HARD OVERRIDE
+================================ */
+
+/* Reset body for result page only */
+body.result-page {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9;
+}
+
+/* Centering wrapper */
+.result-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Result card */
+.result-box {
+    background: #ffffff;
+    max-width: 560px;
+    width: 100%;
+    padding: 50px 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+/* Heading */
+.result-box h2 {
+    margin-bottom: 32px;
+    font-size: 30px;
+    color: #1e88e5;
+}
+
+/* Text spacing FIX */
+.result-details p {
+    font-size: 18px;
+    margin: 18px 0;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Button area */
+.result-actions {
+    margin-top: 35px;
+}
+
+/* Button safety */
+.result-actions .btn {
+    display: inline-block;
+    padding: 14px 38px;
+    font-size: 16px;
+}
+/* ===============================
+   Result Page – Spacing Reduced
+================================ */
+
+/* Heading gap kam */
+.result-box h2 {
+    margin-bottom: 18px;   /* pehle ~32px */
+}
+
+/* Text lines gap kam */
+.result-details p {
+    font-size: 17px;
+    margin: 8px 0;        /* pehle 18px */
+    line-height: 1.4;     /* pehle 1.7 */
+}
+
+/* Button ke upar gap kam */
+.result-actions {
+    margin-top: 20px;     /* pehle 35px */
+}
+
+/* Overall box padding thoda kam */
+.result-box {
+    padding: 35px 32px;   /* pehle 50px 40px */
+}
+.number-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}

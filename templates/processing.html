@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Processing | LoanGyaan AI</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Auto redirect to result page after 3 seconds -->
+    <meta http-equiv="refresh" content="3;url=/result">
+</head>
+
+<body>
+
+<div class="processing">
+    <h2>Analyzing Loan Risk</h2>
+
+    <p>
+        Our AI engine is evaluating the applicant’s financial behavior
+        and credit profile. Please wait...
+    </p>
+
+    <div class="loader"></div>
+
+    <small>
+        This usually takes only a few seconds.
+    </small>
+</div>
+
+</body>
+</html>

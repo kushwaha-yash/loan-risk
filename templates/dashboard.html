@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | LoanGyaan AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- ===============================
+     Dashboard Navbar
+================================ -->
+<nav class="dashboard-navbar">
+    <div class="nav-left">
+        <span class="brand">LoanGyaan AI</span>
+    </div>
+
+    <div class="nav-right">
+        <span class="welcome-text">Welcome, {{ session['user'] }}</span>
+        <a href="/logout" class="logout-btn">Logout</a>
+    </div>
+</nav>
+
+<!-- ===============================
+     Dashboard Content
+================================ -->
+<div class="dashboard-container">
+
+    <div class="dashboard-header">
+        <h2>Loan Risk Decision Console</h2>
+        <p>Assess loan default risk using AI models</p>
+    </div>
+
+    <div class="dashboard-cards">
+
+        <div class="dashboard-card primary">
+            <h3>Check Loan Risk</h3>
+            <p>Start a new loan default risk assessment using AI</p>
+            <a href="/assessment" class="btn">Start Assessment</a>
+        </div>
+
+        <div class="dashboard-card secondary">
+            <h3>System Info</h3>
+            <ul>
+                <li><strong>Model:</strong> Gradient Boosting</li>
+                <li><strong>Accuracy:</strong> 95%</li>
+                <li><strong>Status:</strong> Active</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
